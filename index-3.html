@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09090d">
+<title>Mon espace 💸</title>
+<style>
+:root{--bg:#09090d;--panel:rgba(255,255,255,.075);--line:rgba(255,255,255,.12);--muted:#a8a8b7;--text:#f7f7fb;--pink:#ff6b9b;--blue:#7c8cff;--green:#61e6b1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#242044 0,transparent 38%),radial-gradient(ellipse at 100% 25%,#142d3d 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+.wrap{width:min(100% - 28px,980px);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{display:flex;gap:10px;align-items:center;font-weight:850;letter-spacing:-.04em}.avatar{width:42px;height:42px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,var(--pink),var(--blue));box-shadow:0 8px 35px #ff6b9b30;font-size:21px}.pill{border:1px solid var(--line);background:#ffffff0a;color:#dedee9;border-radius:99px;padding:9px 12px;font-size:12px}
+.hero{padding:42px 0 25px;max-width:760px}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#c7c6ff;font-weight:800}.hero h1{font-size:clamp(38px,8vw,72px);line-height:.98;letter-spacing:-.07em;margin:15px 0}.grad{background:linear-gradient(90deg,#fff 10%,#ff9ab9 50%,#a8b2ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#c1c1cf;line-height:1.7;max-width:570px;font-size:15px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.chip{padding:8px 11px;border-radius:99px;background:#ffffff0a;border:1px solid var(--line);font-size:12px;color:#e1e1ec}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:32px 0 15px}.section-head h2{font-size:23px;letter-spacing:-.04em;margin:0}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);border-radius:24px;padding:20px;background:linear-gradient(145deg,#ffffff12,#ffffff05);box-shadow:0 20px 70px #0002;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}.paytop{display:flex;justify-content:space-between;align-items:center;gap:12px}.payicon{height:48px;width:48px;display:grid;place-items:center;border-radius:16px;font-size:24px;background:#fff;color:#111}.airtel .payicon{background:#ff3c51;color:white}.payname{font-size:17px;font-weight:800}.sub{color:var(--muted);font-size:12px;margin-top:4px}.number{font-size:clamp(19px,4vw,26px);font-weight:850;letter-spacing:-.04em;margin:24px 0 15px;white-space:nowrap}.btn{border:0;cursor:pointer;border-radius:14px;padding:13px 15px;font-weight:800;font-size:13px;transition:transform .15s,filter .15s}.btn:active{transform:scale(.98)}.btn-main{background:#f7f7fb;color:#12121a}.btn-soft{background:#ffffff0d;border:1px solid var(--line);color:#f7f7fb}.full{width:100%}.btnrow{display:flex;gap:9px}.btnrow>*{flex:1}
+.note{margin-top:14px;color:#b7b7c7;font-size:12px;line-height:1.55}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:8px}.field label{font-size:12px;color:#c7c7d5;font-weight:750}.field input,.field select{width:100%;padding:14px 13px;border-radius:13px;border:1px solid var(--line);background:#111119;color:#fff;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:#a7aaff}.wide{grid-column:1/-1}.formcard{margin-top:14px}.hint{border-radius:15px;background:#ffffff08;border:1px solid var(--line);padding:13px;color:#bdbdcd;font-size:12px;line-height:1.6;margin:15px 0}.status{margin-top:12px;padding:13px;border-radius:14px;display:none;background:#123629;border:1px solid #27634d;color:#b8ffe2;font-size:13px;line-height:1.5}.footer{padding:35px 0 28px;color:#8f8fa0;font-size:12px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.footer strong{color:#e8e8f0}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:.25s;background:#f5f5fb;color:#111;padding:12px 17px;border-radius:99px;font-weight:800;font-size:13px;box-shadow:0 12px 40px #0005;z-index:5}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:650px){.grid,.formgrid{grid-template-columns:1fr}.hero{padding-top:30px}.card{padding:17px}.section-head h2{font-size:21px}.top{padding-top:16px}.pill{font-size:11px}.number{font-size:24px}.footer{padding-bottom:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="brand"><div class="avatar">💸</div><span>mon espace<span style="color:#ff91b2">.</span></span></div>
+  <div class="pill">● en ligne, trkl 😮‍💨</div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="eyebrow">TON COIN • VERSION CHILL</div>
+  <h1>Wshhh, <span class="grad">bienvenue hein.</span> 😭</h1>
+  <p>Si t'es là pour m'envoyer un p'tit quelque chose, t'es au bon endroit frérot 😂💸. Choisis ton moyen, vérifie bien le numéro et c carré. Si t'es venu juste regarder… petit curieux va 💀</p>
+  <div class="chips"><span class="chip">📲 transfert simple</span><span class="chip">🤝🏽 entre nous</span><span class="chip">😭 zéro prise de tête</span></div>
+</section>
+
+<div class="section-head"><div><h2>Choisis ton bail 💸</h2><p>MTN ou Airtel, comme tu veux frérot.</p></div><span class="pill">FCFA • XAF</span></div>
+<section class="grid" aria-label="Moyens de transfert">
+  <article class="card">
+    <div class="paytop"><div><div class="payname">MTN Mobile Money</div><div class="sub">MoMo • Congo 🇨🇬</div></div><div class="payicon">📱</div></div>
+    <div class="number" id="mtn-number">+242 06 698 5827</div>
+    <div class="btnrow"><button class="btn btn-main" onclick="copyNumber('mtn-number')">Copier le num 📋</button><button class="btn btn-soft" onclick="chooseMethod('MTN')">Choisir</button></div>
+  </article>
+  <article class="card airtel">
+    <div class="paytop"><div><div class="payname">Airtel Money</div><div class="sub">Airtel Money • 🇨🇬</div></div><div class="payicon">📲</div></div>
+    <div class="number" id="airtel-number">+242 05 608 3644</div>
+    <div class="btnrow"><button class="btn btn-main" onclick="copyNumber('airtel-number')">Copier le num 📋</button><button class="btn btn-soft" onclick="chooseMethod('Airtel')">Choisir</button></div>
+  </article>
+</section>
+
+<div class="section-head"><div><h2>Tu m'envoies combien ? 👀</h2><p>Remplis ça après ton transfert, c tout.</p></div></div>
+<section class="card formcard">
+  <form id="transfer-form">
+    <div class="formgrid">
+      <div class="field"><label for="method">MOYEN DE PAIEMENT</label><select id="method" required><option value="MTN">MTN Mobile Money</option><option value="Airtel">Airtel Money</option></select></div>
+      <div class="field"><label for="amount">MONTANT (FCFA)</label><input id="amount" type="number" min="1" step="1" placeholder="Ex : 5000" required></div>
+      <div class="field"><label for="nickname">TON PSEUDO (facultatif)</label><input id="nickname" maxlength="40" placeholder="Ex : le boss 😎"></div>
+      <div class="field"><label for="reference">RÉF. TRANSACTION</label><input id="reference" maxlength="80" placeholder="La référence du transfert"></div>
+      <div class="wide hint">⚠️ Wsh frérot, vérifie le numéro et le montant avant d'envoyer hein 😭. Ce site ne fait pas le transfert à ta place. Après avoir envoyé l'argent depuis ton appli, indique la référence ici. Une capture seule ne confirme pas la réception.</div>
+      <div class="wide"><button class="btn btn-main full" type="submit">J'ai fait le transfert 🤝🏽</button></div>
+    </div>
+  </form>
+  <div class="status" id="status" role="status"></div>
+</section>
+</main>
+
+<footer class="footer"><span><strong>mon espace 💸</strong> — c carré, la mif.</span><span>Fait avec un peu trop de 😭😂💀</span></footer>
+</div>
+<div class="toast" id="toast">Num copié, frérot 📋</div>
+<script>
+const numbers={MTN:'+242 06 698 5827',Airtel:'+242 05 608 3644'};
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1900)}
+async function copyNumber(id){const value=document.getElementById(id).textContent.trim();try{await navigator.clipboard.writeText(value);showToast('Num copié, frérot 📋')}catch(e){const ta=document.createElement('textarea');ta.value=value;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();showToast('Num copié, frérot 📋')}}
+function chooseMethod(method){document.getElementById('method').value=method;document.getElementById('method').scrollIntoView({behavior:'smooth',block:'center'});showToast(method+' choisi, c carré 😮‍💨')}
+document.getElementById('transfer-form').addEventListener('submit',function(e){e.preventDefault();const method=document.getElementById('method').value;const amount=Number(document.getElementById('amount').value);const nick=document.getElementById('nickname').value.trim()||'un reuf';const ref=document.getElementById('reference').value.trim();if(!Number.isFinite(amount)||amount<1){showToast('Montant invalide frérot 😭');return}const status=document.getElementById('status');status.style.display='block';status.textContent=`C noté, ${nick} 🤝🏽. Tu déclares un transfert de ${amount.toLocaleString('fr-FR')} FCFA via ${method} vers ${numbers[method]}. ${ref?'Réf. indiquée : '+ref+'. ':''}La demande est seulement affichée ici : elle n'est pas envoyée ni enregistrée sur un serveur. Vérifie la réception réelle avant de confirmer. Tkt, c carré 😭💸`;});
+</script>
+</body>
+</html>
